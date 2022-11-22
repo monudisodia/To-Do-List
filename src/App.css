@@ -1,0 +1,138 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    
+}
+
+
+.Container{
+    text-align: center;
+    margin-top: 30px;
+    width: 1300px;
+    min-height: 800px;
+    /* border:1px solid white; */
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: violet 10px;
+    
+}
+
+.title{
+    width: 200px;
+}
+
+input{
+    background-color: rgb(50, 50, 50);
+    width: 500px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+
+}
+
+.list-heading{
+    display: flex;
+    justify-content: center;
+    width: auto;
+   margin-left: 40px;
+   margin-right: 40px;
+
+}
+
+.select{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background: rgb(241, 241, 241);
+    border-radius: 20px;
+    border: 3px solid rgb(50, 50, 50);
+    padding: 5px;
+}
+
+.list-data{
+    display: flex;
+    background-color: rgb(50, 50, 50);
+    
+
+    margin: 10px;
+    /* align-self: center; */
+    width: cover;
+    border-radius: 25px;
+}
+
+
+
+button{
+    width: 80px;
+    height: 45px;
+    border-radius: 70px;
+    border: none;
+    background-color: rgb(25, 79, 167);
+    color: white;
+    margin: 8px;
+    font-size: large;
+}
+button:hover{
+   cursor: pointer;
+   transition-duration: .5s;
+}
+
+.list-data div{
+    background-color: rgb(50, 50, 50);
+    width:1220px;
+    min-height: 35px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+    /* color: whitesmoke; */
+    overflow-wrap: break-word;
+}
+.data-name{
+    background-color: rgb(50, 50, 50);
+    width: auto;
+    min-height: 35px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+    /* color: whitesmoke; */
+    overflow-wrap: break-word;
+}
+
+.deletebtn{
+    background-color: rgb(142, 142, 142);
+}
+.deletebtn:hover{
+    background-color: rgb(172, 20, 20);
+    
+}
+.donebtn{
+    background-color: green;
+}
+
+.edit:disabled{
+    background: rgb(142, 142, 142);
+}
+
+.title-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 1000px;
+}
+.time{
+    font-size: small;
+    /* padding: 200px; */
+}
