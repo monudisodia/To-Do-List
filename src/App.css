@@ -50,6 +50,7 @@ input{
 
 .select{
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 100px;
     height: 40px;
     background: rgb(241, 241, 241);
@@ -65,8 +66,9 @@ input{
 
     margin: 10px;
     /* align-self: center; */
-    width: cover;
+    width: 48.4%;
     border-radius: 25px;
+    border: none;
 }
 
 
@@ -85,10 +87,13 @@ button:hover{
    cursor: pointer;
    transition-duration: .5s;
 }
+button:active{
+    background: rgb(162, 162, 162);
+}
 
 .list-data div{
     background-color: rgb(50, 50, 50);
-    width:1220px;
+    max-width:1220px;
     min-height: 35px;
     border-radius: 10px;
     color: white;
@@ -104,7 +109,6 @@ button:hover{
     min-height: 35px;
     border-radius: 10px;
     color: white;
-    text-align: left;
     margin: 10px;
     padding: 5px;
     /* color: whitesmoke; */
@@ -112,27 +116,35 @@ button:hover{
 }
 
 .deletebtn{
-    background-color: rgb(142, 142, 142);
+    background-color: rgb(137, 33, 33);
 }
-.deletebtn:hover{
-    background-color: rgb(172, 20, 20);
-    
-}
+
 .donebtn{
     background-color: green;
 }
 
-.edit:disabled{
-    background: rgb(142, 142, 142);
+.edit{
+    background: rgb(33, 65, 171);
 }
+
 
 .title-date{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 1000px;
+    justify-content: space-between;
+    width: 95%;
 }
 .time{
     font-size: small;
-    /* padding: 200px; */
+    
+}
+
+.card{
+    width: 90%;
+    /* background: rgb(255, 255, 255); */
+}
+
+
+.add-card{
+    display: flex;
+    flex-wrap: wrap;
 }
