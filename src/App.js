@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import './App.css'
+import img1 from './delete.svg'
+import img2 from './edit.svg'
+
 
 export default function App() {
 
@@ -8,7 +11,7 @@ export default function App() {
     const [listData, setListData] = useState([]);
     const [editId, setEditId] = useState(null);
     const [togglebtn, setTogglebtn] = useState(true);
-    const [disable, setDisable] = useState(false);
+  
 
 /* --------------------------------------------- 
                                                  Adding  items to the list
@@ -120,7 +123,7 @@ export default function App() {
                 <div className='input-div'>
                     <input type='text' placeholder='Add Title' className='title' value={titleData} onChange={(e) => { setTitleData(e.target.value) }} />
                     <input type="text" placeholder='Add Description' value={inpData} onChange={(e) => { setImpData(e.target.value) }} />
-                    <div>{togglebtn ? <button onClick={addList}>Add</button> : <button className='edit' onClick={addList}>Edit</button>}</div>
+                    <div>{togglebtn ? <button onClick={addList}>Add</button> : <button className='edit' style={{border:"3px solid rgb(25, 79, 167)", color:"rgb(25, 79, 167)"}} onClick={addList}>Edit</button>}</div>
 
                 </div>
  {/* {---------------------------- List heading--------------------} */}
@@ -148,9 +151,9 @@ export default function App() {
 
                                         <div className='data-name'>{data.name}</div>
 
-                                        <button className='edit' onClick={() => editlist(data.id)} disabled={disable}>+</button>
+                                        <button className='edit' onClick={() => editlist(data.id)} ><img src={img2} alt="delete-btn" style={{width:'30px'}}></img></button>
                                         {/* <button className='donebtn' onClick={() => done(data.id)}>✓</button> */}
-                                        <button className="deletebtn" onClick={() => removelist(data.id)} >–</button>
+                                        <button className="deletebtn" onClick={() => removelist(data.id)} ><img src={img1} alt="delete-btn" style={{width:'30px'}}></img></button>
 
 
                                     </div>

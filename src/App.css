@@ -74,9 +74,9 @@ input{
 
 
 button{
-    width: 80px;
+    width: 60px;
     height: 45px;
-    border-radius: 70px;
+    border-radius: 30px;
     border: none;
     background-color: rgb(25, 79, 167);
     color: white;
@@ -116,7 +116,7 @@ button:active{
 }
 
 .deletebtn{
-    background-color: rgb(137, 33, 33);
+    background-color: rgb(255, 255, 255);
 }
 
 .donebtn{
@@ -124,7 +124,7 @@ button:active{
 }
 
 .edit{
-    background: rgb(33, 65, 171);
+    background: rgb(255, 255, 255);
 }
 
 
